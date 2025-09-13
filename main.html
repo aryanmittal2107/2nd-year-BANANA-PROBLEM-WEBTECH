@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarpana Run Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-banner orange-bg">
+        <h1 class="header-title">Samarpana Run</h1>
+        
+    </div>
+    <div class="army banner"><h1 class="army">For Indian Army!</h1>
+        <p class="datetime" id="current-datetime"></p>
+    </div>
+    <div class="header-banner green-bg">
+        <h2 class="header-title">Registration Form</h2>
+    </div>
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="e.g., Aryan Mittal" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="e.g., aryan@college.edu" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number *</label>
+                    <input type="tel" id="mobile-number" name="mobile-number" placeholder="e.g., 8765493210" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="university">University/Organization *</label>
+                    <input type="text" id="university" name="university" placeholder="e.g., PES University" required>
+                </div>
+                <div class="form-group">
+                    <label for="usn">USN (College ID) *</label>
+                    <input type="text" id="usn" name="usn" placeholder="e.g., PES2UG24CS089" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="e.g., Bengaluru">
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="e.g., Karnataka">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" id="pincode" name="pincode" placeholder="e.g., 560087">
+                </div>
+                <div class="form-group">
+                    <label for="tshirt-size">T-shirt Size *</label>
+                    <select id="tshirt-size" name="tshirt-size" required>
+                        <option value="">Select size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="3XL">3XL</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="size-chart">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Chest (in)</th>
+                            <th>Chest (cm)</th>
+                            <th>Length (cm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>XS</td><td>34"</td><td>86cm</td><td>65cm</td></tr>
+                        <tr><td>S</td><td>36"</td><td>91cm</td><td>67cm</td></tr>
+                        <tr><td>M</td><td>38"</td><td>97cm</td><td>70cm</td></tr>
+                        <tr><td>L</td><td>40"</td><td>102cm</td><td>72cm</td></tr>
+                        <tr><td>XL</td><td>42"</td><td>107cm</td><td>75cm</td></tr>
+                        <tr><td>XXL</td><td>44"</td><td>112cm</td><td>77cm</td></tr>
+                        <tr><td>3XL</td><td>46"</td><td>117cm</td><td>79cm</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="waiver">
+                <input type="checkbox" id="waiver-checkbox" required>
+                <label for="waiver-checkbox">I confirm the information is accurate and agree to the event terms and waiver.</label>
+            </div>
+
+            <div class="form-buttons">
+                <button type="reset" class="btn reset-btn">Reset Form</button>
+                <button type="submit" class="btn submit-btn">Submit Form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
